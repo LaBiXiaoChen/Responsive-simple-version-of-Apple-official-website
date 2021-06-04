@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>响应式布局</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="container">
+            <div class="row">
+                <div class="header-logo-container col-8 col-md-3">
+                    <a href="https://www.apple.com.cn/iphone/" class="header-logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header-btn-container col-4 d-md-none">
+                    <button type="button" class="btn-toggle" id="btn-toggle">
+                        <span class="btn-toggle-bar"></span>
+                        <span class="btn-toggle-bar"></span>
+                        <span class="btn-toggle-bar"></span>
+                    </button>
+                </div>
+                <nav class="header-nav-container col-md-9 d-none d-md-block">
+                    <ul class="header-nav">
+                        <li class="header-nav-item">
+                            <a href="https://www.apple.com.cn/mac/" class="header-nav-link">Mac</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="https://www.apple.com.cn/ipad/" class="header-nav-link">iPad</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="https://www.apple.com.cn/iphone/" class="header-nav-link">iPhone</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="https://www.apple.com.cn/watch/" class="header-nav-link">Watch</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="https://www.apple.com.cn/music/" class="header-nav-link">Music</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-container d-md-none" id="nav">
+        <ul class="container">
+            <li>
+                <a href="https://www.apple.com.cn/mac/" class="nav-link">Mac</a>
+            </li>
+            <li>
+                <a href="https://www.apple.com.cn/ipad/" class="nav-link">iPad</a>
+            </li>
+            <li>
+                <a href="https://www.apple.com.cn/iphone/" class="nav-link">iPhone</a>
+            </li>
+            <li>
+                <a href="https://www.apple.com.cn/watch/" class="nav-link">Watch</a>
+            </li>
+            <li>
+                <a href="https://www.apple.com.cn/music/" class="nav-link">Music</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="slider-container">
+        <div class="container">
+            <div class="row">
+                <div class="slider-text-container col-md-5 col-md-push-7">
+                    <h3 class="slider-title">iPhone 12 or Max</h3>
+                    <h4 class="slider-subtitle">暗黑 焕新上市</h4>
+                    <div class="slider-btns">
+                        <a href="https://www.apple.com.cn/iphone-12/" class="btn-rounded">了解更多</a>
+                        <a href="https://www.apple.com.cn/shop/buy-iphone/iphone-12" class="btn-rounded">立即购买</a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <img src="img/1.jpg" alt="cellphone">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="###" class="product-item">
+                        <img src="img/2-1.jpg" alt="cellphone" class="product-img">
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="###" class="product-item">
+                        <img src="img/2-3.jpg" alt="cellphone" class="product-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backtop-container d-md-none">
+        <a href="#" class="btn-backtop">回到顶部</a>
+    </div>
+
+    <div class="helper-container">
+        <div class="container">
+            <div class="helper-info-container">
+                <p>* iPhone 12 Pro 和 iPhone 12 Pro Max 自我再飞跃。</p>
+                <p>* 用智能手机来换购，享受折抵优惠。</p>
+                <p>* 升级到新款 iPhone，轻轻松松。</p>
+                <p>* 你可以选择适合自己的付款方式，通过 Apple Trade In 换购计划享受折抵优惠，快速搞定各项设置，还可以和 Specialist 专家沟通交流。</p>
+            </div>
+            <div class="row">
+                <div class="helper-backtop-container col-md-2 col-md-offset-10 d-none d-md-block">
+                    <a href="#" class="btn-backtop">回到顶部</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h3 class="helper-list-title">网站地图</h3>
+                    <ul class="helper-list">
+                        <li><a href="https://www.apple.com.cn/">关于苹果</a></li>
+                        <li><a href="https://www.apple.com.cn/retail/">查找零售店</a></li>
+                        <li><a href="https://www.apple.com.cn/shop">在线选购</a></li>
+                        <li><a href="https://www.apple.com.cn/shop/refurbished">翻新与优惠</a></li>
+                        <li><a href="https://www.apple.com.cn/business/">Apple at Work</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="helper-list-title">苹果商店</h3>
+                    <ul class="helper-list">
+                        <li><a href="https://www.apple.com/careers/cn/">工作机会</a></li>
+                        <li><a href="https://www.apple.com.cn/accessibility/">辅助功能</a></li>
+                        <li><a href="https://www.apple.com.cn/privacy/">隐私</a></li>
+                        <li><a href="https://www.apple.com.cn/supplier-responsibility/">供应商</a></li>
+                        <li><a href="https://www.apple.com.cn/apple-events/">活动</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="helper-list-title">服务支持</h3>
+                    <ul class="helper-list">
+                        <li><a href="https://www.apple.com.cn/education/">Apple与教育
+                            </a></li>
+                        <li><a href="https://www.apple.com.cn/cn-k12/shop">高校师生选购</a></li>
+                        <li><a href="https://www.apple.com.cn/contact/">联系我们</a></li>
+                        <li><a href="https://www.apple.com.cn/icloud/">icloud</a></li>
+                        <li><a href="https://www.apple.com.cn/apple-pay/">Apple Pay</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="helper-list-title">官方分享</h3>
+                    <ul class="helper-list">
+                        <li>
+                            <a href="###" class="btn-share btn-share-weixin"></a>
+                            <a href="###" class="btn-share btn-share-weibo"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <ul>
+                        <li class="footer-item">
+                            <a href="###" class="footer-link">服务条款</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="###" class="footer-link">重要声明</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="###" class="footer-link">隐私政策</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <a href="###" class="footer-link">中国/中文 &gt;</a>
+                </div>
+            </div>
+            <div>
+                <p>此网页最好使用IE10浏览器、Chrome浏览器、Safari浏览器或其他新式浏览器进行浏览</p>
+                <p>京ICP备05068163号 京公网安备110105011756号</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var nav = document.getElementById('nav');
+        var navExtendedClassName = 'nav-container-extended';
+
+        document.getElementById('btn-toggle').onclick = function () {
+            // nav.className += ' ' + navExtendedClassName;
+            if (nav.classList.contains(navExtendedClassName)) { // 收起
+                nav.classList.remove(navExtendedClassName);
+            } else { // 展开
+                nav.classList.add(navExtendedClassName);
+            }
+        };
+    </script>
+</body>
+
+</html>
